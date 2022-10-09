@@ -1,0 +1,14 @@
+{% extends "base.html"%}
+
+{% block user %}
+{% endblock user %}
+
+{% block contents%}
+<p>{{uid}}의 정보</p>
+<p>가장 많이 소비한 카테고리 : {{ucategory}}</p>
+<p>올해 사용금액 : {{usage}}</p>
+<p>다음달 예상 사용 금액 : {{predict_usage}}</p>
+
+
+
+{% endblock contents%}

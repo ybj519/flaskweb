@@ -1,0 +1,24 @@
+{% extends "base.html"%}
+
+{% block user %}
+
+{% endblock user %}
+
+{% block contents%}
+<p>{{uid}}와(과) 같은 성별, 같은 직업군이 가장 많이 소비한 소비카테고리 : {{category}}</p>
+{% if length == 0 %}
+    <p>{{thismax}}</p>
+    <p>{{lastmax}}</p>
+{% else %}
+    <p>이번달 가장 많은 돈을 쓴 날짜 : {{thismax}}</p>
+    <p>저번달 가장 많은 돈을 쓴 날짜 : {{lastmax}}</p>
+    <p>내가 가장 많이 소비한 카테고리 top3 : {{cate}}</p>
+    <p>가장 많이 소비한 카테고리와 가장 연관이 깊은 카테고리: {{templist}}</p>
+    <p>{{uid}}와(과) 같은 성별, 같은 직업군의 평균 한달 소비빈도 : {{usersfreq}}일에 한 번 소비</p>
+    <p>{{uid}}의 평균 소비빈도 : {{ufreq}}일에 한 번 소비</p>
+    <p>{{uid}}와(과) 같은 성별, 같은 직업군이 한 번 소비할때 평균적으로 사용하는 금액 : {{usersconsum}}원</p>
+    <p>{{uid}}이 한번 소비할때 평균적으로 사용하는 금액 : {{uconsum}}원</p>
+    <p>비타민의 한줄평<p>
+    <p>{{msg}}</p>
+{% endif %}
+{% endblock contents%}

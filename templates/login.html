@@ -1,0 +1,11 @@
+{% block contents %}
+
+<form action="{{url_for("login_done")}}" method="get">
+  <p>id:</p>
+  <input type="text" name="id" id="id">
+  <p>password:</p>
+  <input type="password" name="pwd" id="pwd">
+  <button type="submit">로그인</button>
+</form>
+
+{% endblock contents %}

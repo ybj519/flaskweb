@@ -1,0 +1,17 @@
+{% extends "base.html"%}
+
+{% block user %}
+
+{% if user=="Login" %}
+<a href = "{{url_for("login")}}">Login</a>
+{% else %}
+<p>user: {{user}}</p>
+<a href = "{{url_for("logout")}}">Logout</a>
+<a href = "{{url_for( "posts_detail", uid=user)}}">page454</a>
+<a href = "{{url_for("user_posts", uid=user)}}">mypage</a>
+{% endif %}
+{% endblock user %}
+
+{% block contents%}
+
+{% endblock contents%}
